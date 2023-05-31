@@ -33,11 +33,11 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <div class="owner">
         <h1 role="heading">Meet the owner</h1>
-        <ul role="list">
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person" role="list">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="tittle">Title: CEO</li>
+          <li itemprop="Email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="Phone">Phone: 613-000-0000</li>
         </ul>
         <h1 role="heading">Address</h1>
         <p role="contentinfo">
@@ -47,7 +47,7 @@
           B3T 0L0
         </p>
       </div>
-      <section class="contact-section">
+      <section role="complementary" class="contact-section">
         <h1 role="heading">Contact Us</h1>
         <form action="thanks.html" role="form">
           <label>Full Name</label>
@@ -60,7 +60,7 @@
         </form>
       </section>
     </div>
-    <footer class="site-footer">
+    <footer role="contentinfo" class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
   </main>
